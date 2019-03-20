@@ -91,7 +91,7 @@ namespace DynamoDBStreamProcessor
                         command.Parameters["@UserName"].Value = ride?.UserName;
 
                         command.Parameters.Add("@Color", SqlDbType.VarChar);
-                        command.Parameters["@Color"].Value = ride?.RequestTime;
+                        command.Parameters["@Color"].Value = ride?.Color;
 
                         command.Parameters.Add("@Gender", SqlDbType.VarChar);
                         command.Parameters["@Gender"].Value = ride?.Gender;
