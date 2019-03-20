@@ -1,0 +1,23 @@
+
+{
+    "Information" : [
+        "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",
+        "To learn more about the Lambda commands with the .NET Core CLI execute the following command at the command line in the project root directory.",
+        "dotnet lambda help",
+        "All the command line options for the Lambda command can be specified in this file."
+    ],
+    "profile"     : "default",
+    "region"      : "us-east-1",
+    "configuration" : "Release",
+    "framework"     : "netcoreapp2.1",
+    "function-runtime" : "dotnetcore2.1",
+    "function-memory-size" : 256,
+    "function-timeout"     : 30,
+    "function-handler"     : "DynamoDBStreamProcessor::DynamoDBStreamProcessor.Function::FunctionHandler",
+    "function-name"        : "UnicornStreamProcessor",
+    "function-role"        : "arn:aws:iam::168646702614:role/LambdaAll",
+    "tracing-mode"         : "Active",
+    "environment-variables" : "",
+    "function-subnets"      : "subnet-00cb7e75c47cbb05a,subnet-090a8318afd669868,subnet-08b26fce3904bacb6,subnet-09c1f71bd511ba4bd,subnet-09c814ca6cfd17fad,subnet-033a5f109b92d61a8",
+    "function-security-groups" : "sg-0e43e43ff2d654943"
+}
