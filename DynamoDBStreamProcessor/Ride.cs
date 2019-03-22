@@ -6,6 +6,7 @@ using Amazon.DynamoDBv2.DocumentModel;
 
 namespace DynamoDBStreamProcessor
 {
+    //This matches the record structure of SQL 
     public class Ride
     {
         public string RideId { get; set; }
